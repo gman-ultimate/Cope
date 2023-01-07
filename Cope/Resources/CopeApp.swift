@@ -13,7 +13,7 @@ struct CopeApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CopeListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
